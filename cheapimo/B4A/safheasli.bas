@@ -65,7 +65,61 @@ Sub Activity_Create(FirstTime As Boolean)
 		tool=tool+t1+1%y
 	Next
 	ScrollView1.Panel.Height=tool
+	tool=0
 	
+	For i=0 To 4
+		Dim listmenu As Panel
+		listmenu.Initialize("lmpanel")
+		listmenu.Tag=i
+		listmenu.LoadLayout("list")
+		ScrollView2.Panel.AddView(listmenu,0,tool,100%x,310)
+		ScrollView2.Tag=i
+		For j=0 To 4
+			Dim hslist As Panel
+			hslist.Initialize("hspanel")
+			hslist.Tag=j
+			hslist.LoadLayout("product")
+			HorizontalScrollView1.Panel.AddView(hslist,arz,0,45%X,200)
+			HorizontalScrollView1.Tag=j
+			a1=45%x
+			hslist.Width=a1+2%x
+			arz=arz+a1+1%x
+		Next
+		HorizontalScrollView1.Panel.Width=arz
+		arz=0
+		t1=250
+		listmenu.Height=t1 + 2%y
+		tool=tool+t1+1%y
+	Next
+	ScrollView2.Panel.Height=tool
+	tool=0
+	
+	For i=0 To 4
+		Dim listmenu As Panel
+		listmenu.Initialize("lmpanel")
+		listmenu.Tag=i
+		listmenu.LoadLayout("list")
+		ScrollView3.Panel.AddView(listmenu,0,tool,100%x,310)
+		ScrollView3.Tag=i
+		For j=0 To 4
+			Dim hslist As Panel
+			hslist.Initialize("hspanel")
+			hslist.Tag=j
+			hslist.LoadLayout("product")
+			HorizontalScrollView1.Panel.AddView(hslist,arz,0,45%X,200)
+			HorizontalScrollView1.Tag=j
+			a1=45%x
+			hslist.Width=a1+2%x
+			arz=arz+a1+1%x
+		Next
+		HorizontalScrollView1.Panel.Width=arz
+		arz=0
+		t1=250
+		listmenu.Height=t1 + 2%y
+		tool=tool+t1+1%y
+	Next
+	ScrollView3.Panel.Height=tool
+	tool=0
 End Sub
 
 Sub Activity_Resume

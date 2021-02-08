@@ -352,8 +352,8 @@ vis = vis | (showproduct.mostCurrent != null);
 return vis;}
 public static String  _activity_create(boolean _firsttime) throws Exception{
  //BA.debugLineNum = 25;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
- //BA.debugLineNum = 26;BA.debugLine="StartActivity(safheasli)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._safheasli.getObject()));
+ //BA.debugLineNum = 27;BA.debugLine="StartActivity(showproduct)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._showproduct.getObject()));
  //BA.debugLineNum = 28;BA.debugLine="End Sub";
 return "";
 }

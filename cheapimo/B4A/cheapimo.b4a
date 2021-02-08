@@ -2,15 +2,17 @@
 File1=list.bal
 File2=MainPage.bal
 File3=product.bal
-File4=tab1.bal
-File5=tab2.bal
-File6=tab3.bal
+File4=showsubject.bal
+File5=tab1.bal
+File6=tab2.bal
+File7=tab3.bal
 FileGroup1=Default Group
 FileGroup2=Default Group
 FileGroup3=Default Group
 FileGroup4=Default Group
 FileGroup5=Default Group
 FileGroup6=Default Group
+FileGroup7=Default Group
 Group=Default Group
 Library1=appcompat
 Library2=b4xdrawer
@@ -26,7 +28,7 @@ Module2=safheasli
 Module3=showproduct
 Module4=slidmenu
 Module5=Starter
-NumberOfFiles=6
+NumberOfFiles=7
 NumberOfLibraries=8
 NumberOfModules=5
 Version=10.5
@@ -56,7 +58,7 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	StartActivity(safheasli)
-	
+	'StartActivity(safheasli)
+	StartActivity(showproduct)
 End Sub
 

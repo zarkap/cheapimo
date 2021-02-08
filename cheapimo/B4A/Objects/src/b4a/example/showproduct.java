@@ -336,6 +336,10 @@ public class showproduct extends Activity implements B4AActivity{
     }
 
 public anywheresoftware.b4a.keywords.Common __c = null;
+public anywheresoftware.b4a.objects.ScrollViewWrapper _scrollview1 = null;
+public static int _jodasazi = 0;
+public static int[] _tool = null;
+public static float _t1 = 0f;
 public b4a.example.main _main = null;
 public b4a.example.safheasli _safheasli = null;
 public b4a.example.slidmenu _slidmenu = null;
@@ -352,23 +356,72 @@ public static void initializeProcessGlobals() {
             }
 }
 public static String  _activity_create(boolean _firsttime) throws Exception{
- //BA.debugLineNum = 18;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
- //BA.debugLineNum = 22;BA.debugLine="End Sub";
+int _i = 0;
+anywheresoftware.b4a.objects.PanelWrapper _prshow = null;
+ //BA.debugLineNum = 23;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 25;BA.debugLine="Activity.LoadLayout(\"showsubject\")";
+mostCurrent._activity.LoadLayout("showsubject",mostCurrent.activityBA);
+ //BA.debugLineNum = 27;BA.debugLine="For i=0 To 20";
+{
+final int step2 = 1;
+final int limit2 = (int) (20);
+_i = (int) (0) ;
+for (;_i <= limit2 ;_i = _i + step2 ) {
+ //BA.debugLineNum = 28;BA.debugLine="Dim prshow As Panel";
+_prshow = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 29;BA.debugLine="prshow.Initialize(\"prsh\")";
+_prshow.Initialize(mostCurrent.activityBA,"prsh");
+ //BA.debugLineNum = 30;BA.debugLine="prshow.Tag=i";
+_prshow.setTag((Object)(_i));
+ //BA.debugLineNum = 31;BA.debugLine="prshow.LoadLayout(\"product\")";
+_prshow.LoadLayout("product",mostCurrent.activityBA);
+ //BA.debugLineNum = 32;BA.debugLine="t1=210";
+_t1 = (float) (210);
+ //BA.debugLineNum = 33;BA.debugLine="prshow.Height=t1";
+_prshow.setHeight((int) (_t1));
+ //BA.debugLineNum = 34;BA.debugLine="jodasazi=i Mod 2";
+_jodasazi = (int) (_i%2);
+ //BA.debugLineNum = 35;BA.debugLine="If jodasazi=0 Then";
+if (_jodasazi==0) { 
+ //BA.debugLineNum = 36;BA.debugLine="ScrollView1.Panel.AddView(prshow,0,tool(0),49%x";
+mostCurrent._scrollview1.getPanel().AddView((android.view.View)(_prshow.getObject()),(int) (0),_tool[(int) (0)],anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (49),mostCurrent.activityBA),(int) (200));
+ //BA.debugLineNum = 37;BA.debugLine="tool(0)=tool(0)+t1+1%y";
+_tool[(int) (0)] = (int) (_tool[(int) (0)]+_t1+anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (1),mostCurrent.activityBA));
+ }else {
+ //BA.debugLineNum = 39;BA.debugLine="ScrollView1.Panel.AddView(prshow,51%x,tool(1),";
+mostCurrent._scrollview1.getPanel().AddView((android.view.View)(_prshow.getObject()),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (51),mostCurrent.activityBA),_tool[(int) (1)],anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (100),mostCurrent.activityBA),(int) (200));
+ //BA.debugLineNum = 40;BA.debugLine="tool(1)=tool(1)+t1+1%y";
+_tool[(int) (1)] = (int) (_tool[(int) (1)]+_t1+anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (1),mostCurrent.activityBA));
+ };
+ }
+};
+ //BA.debugLineNum = 43;BA.debugLine="ScrollView1.Panel.Height=tool(0)";
+mostCurrent._scrollview1.getPanel().setHeight(_tool[(int) (0)]);
+ //BA.debugLineNum = 44;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 28;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 30;BA.debugLine="End Sub";
+ //BA.debugLineNum = 50;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 52;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
- //BA.debugLineNum = 24;BA.debugLine="Sub Activity_Resume";
- //BA.debugLineNum = 26;BA.debugLine="End Sub";
+ //BA.debugLineNum = 46;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 48;BA.debugLine="End Sub";
 return "";
 }
 public static String  _globals() throws Exception{
  //BA.debugLineNum = 12;BA.debugLine="Sub Globals";
- //BA.debugLineNum = 16;BA.debugLine="End Sub";
+ //BA.debugLineNum = 16;BA.debugLine="Private ScrollView1 As ScrollView";
+mostCurrent._scrollview1 = new anywheresoftware.b4a.objects.ScrollViewWrapper();
+ //BA.debugLineNum = 18;BA.debugLine="Dim jodasazi As Int";
+_jodasazi = 0;
+ //BA.debugLineNum = 19;BA.debugLine="Dim tool(2) As Int";
+_tool = new int[(int) (2)];
+;
+ //BA.debugLineNum = 20;BA.debugLine="Dim t1 As Float";
+_t1 = 0f;
+ //BA.debugLineNum = 21;BA.debugLine="End Sub";
 return "";
 }
 public static String  _process_globals() throws Exception{

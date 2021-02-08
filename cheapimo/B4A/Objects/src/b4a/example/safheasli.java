@@ -434,17 +434,139 @@ _tool = (int) (_tool+_t1+anywheresoftware.b4a.keywords.Common.PerYToCurrent((flo
 };
  //BA.debugLineNum = 61;BA.debugLine="ScrollView1.Panel.Height=tool";
 mostCurrent._scrollview1.getPanel().setHeight(_tool);
- //BA.debugLineNum = 63;BA.debugLine="End Sub";
+ //BA.debugLineNum = 62;BA.debugLine="tool=0";
+_tool = (int) (0);
+ //BA.debugLineNum = 64;BA.debugLine="For i=0 To 4";
+{
+final int step31 = 1;
+final int limit31 = (int) (4);
+_i = (int) (0) ;
+for (;_i <= limit31 ;_i = _i + step31 ) {
+ //BA.debugLineNum = 65;BA.debugLine="Dim listmenu As Panel";
+_listmenu = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 66;BA.debugLine="listmenu.Initialize(\"lmpanel\")";
+_listmenu.Initialize(mostCurrent.activityBA,"lmpanel");
+ //BA.debugLineNum = 67;BA.debugLine="listmenu.Tag=i";
+_listmenu.setTag((Object)(_i));
+ //BA.debugLineNum = 68;BA.debugLine="listmenu.LoadLayout(\"list\")";
+_listmenu.LoadLayout("list",mostCurrent.activityBA);
+ //BA.debugLineNum = 69;BA.debugLine="ScrollView2.Panel.AddView(listmenu,0,tool,100%x,";
+mostCurrent._scrollview2.getPanel().AddView((android.view.View)(_listmenu.getObject()),(int) (0),_tool,anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (100),mostCurrent.activityBA),(int) (310));
+ //BA.debugLineNum = 70;BA.debugLine="ScrollView2.Tag=i";
+mostCurrent._scrollview2.setTag((Object)(_i));
+ //BA.debugLineNum = 71;BA.debugLine="For j=0 To 4";
+{
+final int step38 = 1;
+final int limit38 = (int) (4);
+_j = (int) (0) ;
+for (;_j <= limit38 ;_j = _j + step38 ) {
+ //BA.debugLineNum = 72;BA.debugLine="Dim hslist As Panel";
+_hslist = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 73;BA.debugLine="hslist.Initialize(\"hspanel\")";
+_hslist.Initialize(mostCurrent.activityBA,"hspanel");
+ //BA.debugLineNum = 74;BA.debugLine="hslist.Tag=j";
+_hslist.setTag((Object)(_j));
+ //BA.debugLineNum = 75;BA.debugLine="hslist.LoadLayout(\"product\")";
+_hslist.LoadLayout("product",mostCurrent.activityBA);
+ //BA.debugLineNum = 76;BA.debugLine="HorizontalScrollView1.Panel.AddView(hslist,arz,";
+mostCurrent._horizontalscrollview1.getPanel().AddView((android.view.View)(_hslist.getObject()),_arz,(int) (0),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (45),mostCurrent.activityBA),(int) (200));
+ //BA.debugLineNum = 77;BA.debugLine="HorizontalScrollView1.Tag=j";
+mostCurrent._horizontalscrollview1.setTag((Object)(_j));
+ //BA.debugLineNum = 78;BA.debugLine="a1=45%x";
+_a1 = (float) (anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (45),mostCurrent.activityBA));
+ //BA.debugLineNum = 79;BA.debugLine="hslist.Width=a1+2%x";
+_hslist.setWidth((int) (_a1+anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (2),mostCurrent.activityBA)));
+ //BA.debugLineNum = 80;BA.debugLine="arz=arz+a1+1%x";
+_arz = (int) (_arz+_a1+anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (1),mostCurrent.activityBA));
+ }
+};
+ //BA.debugLineNum = 82;BA.debugLine="HorizontalScrollView1.Panel.Width=arz";
+mostCurrent._horizontalscrollview1.getPanel().setWidth(_arz);
+ //BA.debugLineNum = 83;BA.debugLine="arz=0";
+_arz = (int) (0);
+ //BA.debugLineNum = 84;BA.debugLine="t1=250";
+_t1 = (float) (250);
+ //BA.debugLineNum = 85;BA.debugLine="listmenu.Height=t1 + 2%y";
+_listmenu.setHeight((int) (_t1+anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (2),mostCurrent.activityBA)));
+ //BA.debugLineNum = 86;BA.debugLine="tool=tool+t1+1%y";
+_tool = (int) (_tool+_t1+anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (1),mostCurrent.activityBA));
+ }
+};
+ //BA.debugLineNum = 88;BA.debugLine="ScrollView2.Panel.Height=tool";
+mostCurrent._scrollview2.getPanel().setHeight(_tool);
+ //BA.debugLineNum = 89;BA.debugLine="tool=0";
+_tool = (int) (0);
+ //BA.debugLineNum = 91;BA.debugLine="For i=0 To 4";
+{
+final int step57 = 1;
+final int limit57 = (int) (4);
+_i = (int) (0) ;
+for (;_i <= limit57 ;_i = _i + step57 ) {
+ //BA.debugLineNum = 92;BA.debugLine="Dim listmenu As Panel";
+_listmenu = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 93;BA.debugLine="listmenu.Initialize(\"lmpanel\")";
+_listmenu.Initialize(mostCurrent.activityBA,"lmpanel");
+ //BA.debugLineNum = 94;BA.debugLine="listmenu.Tag=i";
+_listmenu.setTag((Object)(_i));
+ //BA.debugLineNum = 95;BA.debugLine="listmenu.LoadLayout(\"list\")";
+_listmenu.LoadLayout("list",mostCurrent.activityBA);
+ //BA.debugLineNum = 96;BA.debugLine="ScrollView3.Panel.AddView(listmenu,0,tool,100%x,";
+mostCurrent._scrollview3.getPanel().AddView((android.view.View)(_listmenu.getObject()),(int) (0),_tool,anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (100),mostCurrent.activityBA),(int) (310));
+ //BA.debugLineNum = 97;BA.debugLine="ScrollView3.Tag=i";
+mostCurrent._scrollview3.setTag((Object)(_i));
+ //BA.debugLineNum = 98;BA.debugLine="For j=0 To 4";
+{
+final int step64 = 1;
+final int limit64 = (int) (4);
+_j = (int) (0) ;
+for (;_j <= limit64 ;_j = _j + step64 ) {
+ //BA.debugLineNum = 99;BA.debugLine="Dim hslist As Panel";
+_hslist = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 100;BA.debugLine="hslist.Initialize(\"hspanel\")";
+_hslist.Initialize(mostCurrent.activityBA,"hspanel");
+ //BA.debugLineNum = 101;BA.debugLine="hslist.Tag=j";
+_hslist.setTag((Object)(_j));
+ //BA.debugLineNum = 102;BA.debugLine="hslist.LoadLayout(\"product\")";
+_hslist.LoadLayout("product",mostCurrent.activityBA);
+ //BA.debugLineNum = 103;BA.debugLine="HorizontalScrollView1.Panel.AddView(hslist,arz,";
+mostCurrent._horizontalscrollview1.getPanel().AddView((android.view.View)(_hslist.getObject()),_arz,(int) (0),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (45),mostCurrent.activityBA),(int) (200));
+ //BA.debugLineNum = 104;BA.debugLine="HorizontalScrollView1.Tag=j";
+mostCurrent._horizontalscrollview1.setTag((Object)(_j));
+ //BA.debugLineNum = 105;BA.debugLine="a1=45%x";
+_a1 = (float) (anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (45),mostCurrent.activityBA));
+ //BA.debugLineNum = 106;BA.debugLine="hslist.Width=a1+2%x";
+_hslist.setWidth((int) (_a1+anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (2),mostCurrent.activityBA)));
+ //BA.debugLineNum = 107;BA.debugLine="arz=arz+a1+1%x";
+_arz = (int) (_arz+_a1+anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (1),mostCurrent.activityBA));
+ }
+};
+ //BA.debugLineNum = 109;BA.debugLine="HorizontalScrollView1.Panel.Width=arz";
+mostCurrent._horizontalscrollview1.getPanel().setWidth(_arz);
+ //BA.debugLineNum = 110;BA.debugLine="arz=0";
+_arz = (int) (0);
+ //BA.debugLineNum = 111;BA.debugLine="t1=250";
+_t1 = (float) (250);
+ //BA.debugLineNum = 112;BA.debugLine="listmenu.Height=t1 + 2%y";
+_listmenu.setHeight((int) (_t1+anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (2),mostCurrent.activityBA)));
+ //BA.debugLineNum = 113;BA.debugLine="tool=tool+t1+1%y";
+_tool = (int) (_tool+_t1+anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (1),mostCurrent.activityBA));
+ }
+};
+ //BA.debugLineNum = 115;BA.debugLine="ScrollView3.Panel.Height=tool";
+mostCurrent._scrollview3.getPanel().setHeight(_tool);
+ //BA.debugLineNum = 116;BA.debugLine="tool=0";
+_tool = (int) (0);
+ //BA.debugLineNum = 117;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 69;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 71;BA.debugLine="End Sub";
+ //BA.debugLineNum = 123;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 125;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
- //BA.debugLineNum = 65;BA.debugLine="Sub Activity_Resume";
- //BA.debugLineNum = 67;BA.debugLine="End Sub";
+ //BA.debugLineNum = 119;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 121;BA.debugLine="End Sub";
 return "";
 }
 public static String  _globals() throws Exception{
@@ -480,8 +602,8 @@ public static String  _process_globals() throws Exception{
 return "";
 }
 public static String  _tabfview() throws Exception{
- //BA.debugLineNum = 73;BA.debugLine="Sub tabfview ()";
- //BA.debugLineNum = 78;BA.debugLine="End Sub";
+ //BA.debugLineNum = 127;BA.debugLine="Sub tabfview ()";
+ //BA.debugLineNum = 132;BA.debugLine="End Sub";
 return "";
 }
 }

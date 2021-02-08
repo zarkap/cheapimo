@@ -16,6 +16,6 @@ ModuleClosedNodes2=
 ModuleClosedNodes3=
 ModuleClosedNodes4=
 ModuleClosedNodes5=1
-NavigationStack=Main,Process_Globals,18,0,safheasli,Activity_Resume,32,0,Visual Designer,MainPage.bal,-100,6,Visual Designer,tab3.bal,-100,3,Visual Designer,tab2.bal,-100,5,Visual Designer,tab1.bal,-100,6,Visual Designer,list.bal,-100,5,Visual Designer,product.bal,-100,6,safheasli,Activity_Create,60,6,safheasli,Globals,23,6
+NavigationStack=safheasli,Globals,17,6,Visual Designer,MainPage.bal,-100,6,Visual Designer,showsubject.bal,-100,2,Main,Activity_Create,26,2,Visual Designer,product.bal,-100,6,safheasli,Activity_Create,56,6,showproduct,Globals,19,6,showproduct,Activity_Resume,45,0,showproduct,Activity_Create,38,6,showproduct,Activity_Pause,49,0
 SelectedBuild=0
 VisibleModules=2,3,4,1
