@@ -19,7 +19,7 @@ Sub Globals
 	'These global variables will be redeclared each time the activity is created.
 	'These variables can only be accessed from this module.
 
-	Private toolbarhelper As ACActionMenu
+	Dim toolbarhelper As ACActionBar
 	Private ACToolBarLight1 As ACToolBarLight
 	Private TabStrip1 As TabStrip
 	Private HorizontalScrollView1 As HorizontalScrollView
@@ -27,6 +27,7 @@ Sub Globals
 	Private ScrollView2 As ScrollView
 	Private ScrollView3 As ScrollView
 	
+	Dim draw As B4XDrawer
 	Dim arz As Int
 	Dim a1 As Float
 	Dim tool As Int
@@ -36,7 +37,11 @@ End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
 	'Do not forget to load the layout file created with the visual designer. For example:
-	Activity.LoadLayout("MainPage")
+	'Activity.LoadLayout("MainPage")
+	draw.Initialize(Me,"draw",Activity,50%x)
+	draw.CenterPanel.LoadLayout("MainPage")
+	draw.LeftPanel.LoadLayout("drawer")
+	
 	TabStrip1.LoadLayout("tab1","men")
 	TabStrip1.LoadLayout("tab2","women")
 	TabStrip1.LoadLayout("tab3","set")
@@ -52,9 +57,9 @@ Sub Activity_Create(FirstTime As Boolean)
 			hslist.Initialize("hspanel")
 			hslist.Tag=j
 			hslist.LoadLayout("product")
-			HorizontalScrollView1.Panel.AddView(hslist,arz,0,45%X,200)
+			HorizontalScrollView1.Panel.AddView(hslist,arz,0,38%X,200)
 			HorizontalScrollView1.Tag=j
-			a1=45%x
+			a1=38%x
 			hslist.Width=a1+2%x
 			arz=arz+a1+1%x
 		Next
@@ -79,9 +84,9 @@ Sub Activity_Create(FirstTime As Boolean)
 			hslist.Initialize("hspanel")
 			hslist.Tag=j
 			hslist.LoadLayout("product")
-			HorizontalScrollView1.Panel.AddView(hslist,arz,0,45%X,200)
+			HorizontalScrollView1.Panel.AddView(hslist,arz,0,38%X,200)
 			HorizontalScrollView1.Tag=j
-			a1=45%x
+			a1=38%x
 			hslist.Width=a1+2%x
 			arz=arz+a1+1%x
 		Next
@@ -106,9 +111,9 @@ Sub Activity_Create(FirstTime As Boolean)
 			hslist.Initialize("hspanel")
 			hslist.Tag=j
 			hslist.LoadLayout("product")
-			HorizontalScrollView1.Panel.AddView(hslist,arz,0,45%X,200)
+			HorizontalScrollView1.Panel.AddView(hslist,arz,0,38%X,200)
 			HorizontalScrollView1.Tag=j
-			a1=45%x
+			a1=38%x
 			hslist.Width=a1+2%x
 			arz=arz+a1+1%x
 		Next
@@ -130,9 +135,18 @@ Sub Activity_Pause (UserClosed As Boolean)
 
 End Sub
 
-Sub tabfview ()
-	
-	
+Sub ACToolBarLight1_NavigationItemClick
+	draw.LeftOpen = Not(draw.LeftOpen)
+End Sub
 
-	
+Sub Activity_KeyPress (KeyCode As Int) As Boolean 
+	If KeyCode = KeyCodes.KEYCODE_BACK And draw.LeftOpen Then
+		draw.LeftOpen = False
+		Return True
+	End If
+	Return False
+End Sub
+
+Private Sub Label1_Click
+	draw.LeftOpen = Not(draw.LeftOpen)
 End Sub

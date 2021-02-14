@@ -40,6 +40,7 @@ public boolean _logevents = false;
 public b4a.example.main _main = null;
 public b4a.example.safheasli _safheasli = null;
 public b4a.example.showproduct _showproduct = null;
+public b4a.example.productdetail _productdetail = null;
 public b4a.example.slidmenu _slidmenu = null;
 public b4a.example.starter _starter = null;
 public b4a.example.b4xpages _b4xpages = null;
@@ -192,7 +193,7 @@ _idtolower = _id.toLowerCase();
  //BA.debugLineNum = 120;BA.debugLine="If IdToB4XPage.ContainsKey(IdToLower) Then";
 if (_idtob4xpage._containskey /*boolean*/ ((Object)(_idtolower))) { 
  //BA.debugLineNum = 121;BA.debugLine="Log($\"Page with this id already exists: ${IdToLo";
-__c.LogImpl("97667715",("Page with this id already exists: "+__c.SmartStringFormatter("",(Object)(_idtolower))+"!"),0);
+__c.LogImpl("97995395",("Page with this id already exists: "+__c.SmartStringFormatter("",(Object)(_idtolower))+"!"),0);
  //BA.debugLineNum = 122;BA.debugLine="Return";
 if (true) return "";
  };
@@ -292,7 +293,7 @@ _screenorientation = (int)(BA.ObjectToNumber(_act.GetField("screenOrientation"))
  //BA.debugLineNum = 99;BA.debugLine="If screenOrientation = -1 Then";
 if (_screenorientation==-1) { 
  //BA.debugLineNum = 100;BA.debugLine="LogColor(\"#SupportedOrientations attribute mus";
-__c.LogImpl("97536652","#SupportedOrientations attribute must be set to landscape or portrait.",_xui.Color_Red);
+__c.LogImpl("97864332","#SupportedOrientations attribute must be set to landscape or portrait.",_xui.Color_Red);
  };
  };
  }
@@ -348,12 +349,12 @@ if (true) return "";};
  //BA.debugLineNum = 189;BA.debugLine="If xui.IsB4i And GetTopPage <> pi Then";
 if (_xui.getIsB4i() && (_gettoppage()).equals(_pi) == false) { 
  //BA.debugLineNum = 190;BA.debugLine="Log(\"Only top page can be closed\")";
-__c.LogImpl("97929860","Only top page can be closed",0);
+__c.LogImpl("98257540","Only top page can be closed",0);
  //BA.debugLineNum = 191;BA.debugLine="Return";
 if (true) return "";
  }else if(_xui.getIsB4i() && _mstackofpageids._getsize /*int*/ ()==1) { 
  //BA.debugLineNum = 193;BA.debugLine="Log(\"First page cannot be closed\")";
-__c.LogImpl("97929863","First page cannot be closed",0);
+__c.LogImpl("98257543","First page cannot be closed",0);
  //BA.debugLineNum = 194;BA.debugLine="Return";
 if (true) return "";
  };
@@ -561,9 +562,9 @@ _pi = (b4a.example.b4xpagesmanager._b4xpageinfo)(_idtob4xpage._get /*Object*/ ((
  //BA.debugLineNum = 373;BA.debugLine="If pi = Null Then";
 if (_pi== null) { 
  //BA.debugLineNum = 374;BA.debugLine="Log(\"Error: page id not found: \" & id)";
-__c.LogImpl("98585219","Error: page id not found: "+_id,0);
+__c.LogImpl("98912899","Error: page id not found: "+_id,0);
  //BA.debugLineNum = 375;BA.debugLine="Log(\"Ids: \" & IdToB4XPage.Keys) 'ignore";
-__c.LogImpl("98585220","Ids: "+BA.ObjectToString(_idtob4xpage._getkeys /*anywheresoftware.b4a.objects.collections.List*/ ()),0);
+__c.LogImpl("98912900","Ids: "+BA.ObjectToString(_idtob4xpage._getkeys /*anywheresoftware.b4a.objects.collections.List*/ ()),0);
  };
  //BA.debugLineNum = 377;BA.debugLine="Return pi";
 if (true) return _pi;
@@ -693,7 +694,7 @@ _idtob4xpage._remove /*String*/ ((Object)("~~~~~temp~~~~"));
  //BA.debugLineNum = 83;BA.debugLine="AddPageAndCreate(\"MainPage\", MainPage)";
 _addpageandcreate("MainPage",(Object)(_mainpage));
  //BA.debugLineNum = 84;BA.debugLine="Log(\"Call B4XPages.GetManager.LogEvents = True to";
-__c.LogImpl("97471129","Call B4XPages.GetManager.LogEvents = True to enable logging B4XPages events.",0);
+__c.LogImpl("97798809","Call B4XPages.GetManager.LogEvents = True to enable logging B4XPages events.",0);
  //BA.debugLineNum = 85;BA.debugLine="End Sub";
 return "";
 }
@@ -705,7 +706,7 @@ if (_logevents) {
  //BA.debugLineNum = 615;BA.debugLine="Dim msg As String = $\"*** ${pi.Id}: ${ev} ${Stac";
 _msg = ("*** "+__c.SmartStringFormatter("",(Object)(_pi.Id /*String*/ ))+": "+__c.SmartStringFormatter("",(Object)(_ev))+" "+__c.SmartStringFormatter("",(Object)(_stackstring))+"");
  //BA.debugLineNum = 616;BA.debugLine="Log(msg)";
-__c.LogImpl("99699331",_msg,0);
+__c.LogImpl("910027011",_msg,0);
  };
  //BA.debugLineNum = 618;BA.debugLine="End Sub";
 return "";
@@ -757,7 +758,7 @@ __c.CallSubDelayed3(ba,_targetpage.B4XPage /*Object*/ ,_subname,_params[(int) (0
  break; }
 default: {
  //BA.debugLineNum = 535;BA.debugLine="Log(\"Too many parameters\")";
-__c.LogImpl("99175054","Too many parameters",0);
+__c.LogImpl("99502734","Too many parameters",0);
  break; }
 }
 ;
@@ -798,7 +799,7 @@ if (true) return __c.CallSubNew3(ba,_targetpage.B4XPage /*Object*/ ,_subname,_pa
  break; }
 default: {
  //BA.debugLineNum = 553;BA.debugLine="Log(\"Too many parameters\")";
-__c.LogImpl("99240590","Too many parameters",0);
+__c.LogImpl("99568270","Too many parameters",0);
  break; }
 }
 ;

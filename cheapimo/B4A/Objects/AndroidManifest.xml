@@ -44,6 +44,13 @@
 			android:label="B4A Example"
 			android:screenOrientation="portrait">
 		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".productdetail"
+			android:label="B4A Example"
+			android:screenOrientation="portrait">
+		</activity>
 		<service android:name=".starter">
 		</service>
 		<receiver android:name=".starter$starter_BR">

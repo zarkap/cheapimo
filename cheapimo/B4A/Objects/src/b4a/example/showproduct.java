@@ -342,6 +342,7 @@ public static int[] _tool = null;
 public static float _t1 = 0f;
 public b4a.example.main _main = null;
 public b4a.example.safheasli _safheasli = null;
+public b4a.example.productdetail _productdetail = null;
 public b4a.example.slidmenu _slidmenu = null;
 public b4a.example.starter _starter = null;
 public b4a.example.b4xpages _b4xpages = null;
@@ -383,13 +384,13 @@ _prshow.setHeight((int) (_t1));
 _jodasazi = (int) (_i%2);
  //BA.debugLineNum = 35;BA.debugLine="If jodasazi=0 Then";
 if (_jodasazi==0) { 
- //BA.debugLineNum = 36;BA.debugLine="ScrollView1.Panel.AddView(prshow,0,tool(0),49%x";
-mostCurrent._scrollview1.getPanel().AddView((android.view.View)(_prshow.getObject()),(int) (0),_tool[(int) (0)],anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (49),mostCurrent.activityBA),(int) (200));
+ //BA.debugLineNum = 36;BA.debugLine="ScrollView1.Panel.AddView(prshow,0,tool(0),49.5";
+mostCurrent._scrollview1.getPanel().AddView((android.view.View)(_prshow.getObject()),(int) (0),_tool[(int) (0)],anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (49.5),mostCurrent.activityBA),(int) (200));
  //BA.debugLineNum = 37;BA.debugLine="tool(0)=tool(0)+t1+1%y";
 _tool[(int) (0)] = (int) (_tool[(int) (0)]+_t1+anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (1),mostCurrent.activityBA));
  }else {
- //BA.debugLineNum = 39;BA.debugLine="ScrollView1.Panel.AddView(prshow,51%x,tool(1),";
-mostCurrent._scrollview1.getPanel().AddView((android.view.View)(_prshow.getObject()),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (51),mostCurrent.activityBA),_tool[(int) (1)],anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (100),mostCurrent.activityBA),(int) (200));
+ //BA.debugLineNum = 39;BA.debugLine="ScrollView1.Panel.AddView(prshow,50.5%x,tool(1";
+mostCurrent._scrollview1.getPanel().AddView((android.view.View)(_prshow.getObject()),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (50.5),mostCurrent.activityBA),_tool[(int) (1)],anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (100),mostCurrent.activityBA),(int) (200));
  //BA.debugLineNum = 40;BA.debugLine="tool(1)=tool(1)+t1+1%y";
 _tool[(int) (1)] = (int) (_tool[(int) (1)]+_t1+anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (1),mostCurrent.activityBA));
  };

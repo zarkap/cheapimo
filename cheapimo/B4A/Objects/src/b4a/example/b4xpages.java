@@ -17,6 +17,7 @@ public static Object _globalcontext = null;
 public b4a.example.main _main = null;
 public b4a.example.safheasli _safheasli = null;
 public b4a.example.showproduct _showproduct = null;
+public b4a.example.productdetail _productdetail = null;
 public b4a.example.slidmenu _slidmenu = null;
 public b4a.example.starter _starter = null;
 public b4a.example.b4xcollections _b4xcollections = null;

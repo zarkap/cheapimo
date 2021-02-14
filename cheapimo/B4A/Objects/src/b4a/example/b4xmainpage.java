@@ -29,6 +29,7 @@ public anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
 public b4a.example.main _main = null;
 public b4a.example.safheasli _safheasli = null;
 public b4a.example.showproduct _showproduct = null;
+public b4a.example.productdetail _productdetail = null;
 public b4a.example.slidmenu _slidmenu = null;
 public b4a.example.starter _starter = null;
 public b4a.example.b4xpages _b4xpages = null;

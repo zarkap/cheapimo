@@ -29,6 +29,7 @@ public int _mlength = 0;
 public b4a.example.main _main = null;
 public b4a.example.safheasli _safheasli = null;
 public b4a.example.showproduct _showproduct = null;
+public b4a.example.productdetail _productdetail = null;
 public b4a.example.slidmenu _slidmenu = null;
 public b4a.example.starter _starter = null;
 public b4a.example.b4xpages _b4xpages = null;
@@ -172,7 +173,7 @@ byte[] _afterindex = null;
 if (_index>=_mlength) { 
  //BA.debugLineNum = 47;BA.debugLine="If Index > mLength Then Log(\"Index too large\")";
 if (_index>_mlength) { 
-__c.LogImpl("94390914","Index too large",0);};
+__c.LogImpl("94718594","Index too large",0);};
  //BA.debugLineNum = 48;BA.debugLine="Append(Data)";
 _append(_data);
  }else {
@@ -214,7 +215,7 @@ public String  _set(int _index,byte[] _data) throws Exception{
 if (_index>=_mlength) { 
  //BA.debugLineNum = 60;BA.debugLine="If Index > mLength Then Log(\"Index too large\")";
 if (_index>_mlength) { 
-__c.LogImpl("94456450","Index too large",0);};
+__c.LogImpl("94784130","Index too large",0);};
  //BA.debugLineNum = 61;BA.debugLine="Append(Data)";
 _append(_data);
  }else {
